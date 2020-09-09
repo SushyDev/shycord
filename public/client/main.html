@@ -1,0 +1,56 @@
+<head>
+  <title>Shycord!</title>
+  <meta charset="UTF-8">
+  <i class="em em-100"></i>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shycord - A client for Discord">
+  <link rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/colors.css">
+
+  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+
+  <script src="/js/libraries/discord.js"></script>
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="/js/account/login.js"></script>
+
+  <script src="/js/functions/receive-messages.js"></script>
+
+  <script src="/js/load/channels.js"></script>
+
+ 
+  <script src="/js/functions/send-messages.js"></script>
+
+  <script src="/js/load/libraries.js"></script>
+  <script src="/js/load/guilds.js"></script>
+</head>
+
+
+
+
+<body onload="login();">
+
+  <div id="main-page" class="main-page">
+
+    <div id="guilds-list" class="guilds-list"></div>
+
+    <div id="channels-list" class="channels-list"></div>
+
+    <div id="messages-field" class="messages-field"></div>
+
+  </div>
+
+<img id="output">
+
+  <div class="message-box">
+    <input onkeypress="enter()" type="text" id="message-input" class="message-input" placeholder="Enter message here!">
+    <button onclick="sendMessage()" class="message-button" id="message-button">Send</button>
+    <input type="file" class="attachment-button" id="attachment-button">
+  </div>
+
+  <button onclick="logout()" class="logout-button">Logout</button>
+
+</body>

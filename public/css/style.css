@@ -1,0 +1,209 @@
+* {
+  font-family: 'Open Sans';
+}
+
+html,body{ margin:0; padding:0; height:100%; width:100%; }
+#full-size{
+  background-color: var(--background);
+  height:100%;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+}
+
+.main-page {
+  background: var(--background);
+}
+
+.guilds-list {
+  position: fixed;
+  width: 100px;
+  height: calc(100% - 50px);
+  background-color: var(--background);
+  border-radius: 0px 0px 0px 0px;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.guild-icon {
+  max-height: 75px;
+  border-radius: 25px;  
+}
+
+.guild-button {
+  background: none;
+  border: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.channels-list {
+  position: fixed;
+  width: 225px;
+  height: calc(100% - 50px);
+  background-color: var(--background);
+  left: 100px;
+  border-radius: 0px 0px 0px 0px;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.channel-button {
+  background-color: var(--background2);
+  width: 90%;
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 5.5px;
+  margin-top: 5.5px;
+  display: inline-block;  
+  border-radius: 10px 10px 10px 10px;
+  text-align: left;
+}
+
+.channel-button p {
+  margin-left: 10px;
+  color: white;
+  font-family: Open Sans;
+}
+
+.messages-field {
+  background-color: var(--background);
+  position: fixed;
+  left: 325px;
+  overflow-y: scroll;
+  height: calc(100% - 10px);
+  border-radius: 0px 0px 0px 0px;
+  width: calc(100% - 325px);
+}
+
+.message-box {
+  position: fixed;
+  bottom: 0px;
+  right: -100px;
+  left: auto;
+  width: 100%;
+}
+
+.message-input {
+  position: fixed;
+  border: none;
+  background-color: var(--background2);;
+  color: white !important;
+  padding: 10px;
+  padding-left: 25px;
+  border-radius: 0px 0px 0px 0px;
+  width: calc(100vw - 525px);
+  left: 325px;
+  bottom: 0px;
+  height: 50px;
+  font-size: 100%;
+}
+
+.message-input::placeholder {
+  color: white;
+}
+
+.message-button {
+  position: fixed;
+  border: none;
+  padding: 10px;
+  background-color: var(--background3);;
+  border-radius: 0px 0px 0px 0px;
+  color: white;
+  right: 0px;
+  left: auto;
+  bottom: 0px;
+  height: 50px;
+  width: 100px;
+}
+
+.attachment-button {
+  position: fixed;
+  border: none;
+  padding: 10px;
+  background-color: var(--background3);;
+  border-radius: 0px 0px 0px 0px;
+  color: white;
+  right: 100px;
+  left: auto;
+  bottom: 0px;
+  height: 50px;
+  width: 100px;
+}
+
+.message-div {
+  height:auto;
+  overflow:visible;
+  min-height: 100px;
+  margin-top: -40px;
+}
+
+.text-message {
+  position: relative;
+  color: white;
+  left: 70px;
+  bottom: 45px;
+}
+
+.author-avatar {
+  position: relative;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.author-button {
+  position: relative;
+  bottom: 35px;
+  left: 15px;
+  text-decoration: underline;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 110%;
+}
+
+.message-attachment {
+  position: relative;
+  max-width: 500px;
+  max-height:500px;
+  background-color: transparent;
+  color: white;
+  left: 70px;
+  bottom: 45px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.logout-button {
+  position: fixed;
+  border: none;
+  padding: 10px;
+  background-color: var(--background3);
+  border-radius: 0px 0px 0px 0px;
+  color: white;
+  width: 325px;
+  right: left;
+  bottom: 0px;
+  height: 50px;
+}
+
+input:focus {
+    outline: none;
+  }
+  button:focus {
+    outline: none;
+  }
+  select:focus {
+    outline: none;
+  }
+  option:focus {
+    outline: none;
+  }
+
+  .guilds-list::-webkit-scrollbar, .channels-list::-webkit-scrollbar, .messages-field::-webkit-scrollbar  {
+    display: none;
+  }
