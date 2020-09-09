@@ -1,0 +1,12 @@
+:root {
+    --background: rgba(20, 20, 20, 1);
+    --background2: rgba(60, 60, 60, 1);
+    --background3: rgba(100, 100, 100, 1);
+    
+    --accent: rgba(80, 174, 80, 1);
+    }
+      
+    [data-theme="dark"] {
+      --background: rgba(0,0,0,1);
+    }
+      
